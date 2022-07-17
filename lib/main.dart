@@ -19,10 +19,10 @@ class Home extends StatelessWidget {
   //function
   openMap() async {
     // Android
-    var url = Uri.parse('geo:52.32,4.917');
+    var url = Uri.parse('https://play.google.com/store/apps/details?id=eHR.Android');
     if (Platform.isIOS) {
       // iOS
-      url = Uri.parse('http://maps.apple.com/?ll=52.32,4.917');
+      url = Uri.parse('https://play.google.com/store/apps/details?id=eHR.Android');
     }
     if (await canLaunchUrl(url)) {
       await launchUrl(url);
